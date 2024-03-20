@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://08ib4b4t7vvr" path="res://Art/Tile-2.png" id="1_5olmp"]
 [ext_resource type="PackedScene" uid="uid://c6ct8uvratg22" path="res://Characters/knight.tscn" id="2_nfqnf"]
-[ext_resource type="PackedScene" uid="uid://cuyofhu0lkiht" path="res://Art/portal.tscn" id="3_xfssj"]
+[ext_resource type="PackedScene" uid="uid://cuyofhu0lkiht" path="res://Characters/portal.tscn" id="3_xfssj"]
 [ext_resource type="PackedScene" uid="uid://7jtmd4tibdeb" path="res://Characters/Enemies/skeleton.tscn" id="4_ekf1p"]
 [ext_resource type="PackedScene" uid="uid://cwg2802ftnvir" path="res://Art/coin.tscn" id="5_u3fhq"]
 
