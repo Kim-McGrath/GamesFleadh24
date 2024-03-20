@@ -32,7 +32,6 @@ func _physics_process(_delta):
 
 func pick_new_state():
 	if velocity != Vector2.ZERO:
-		print("Walking")
 		state_machine.travel("Walk")
 	if Input.is_action_pressed("mouse_left"):
 		# Ensure that the attack animation continues until it finishes
