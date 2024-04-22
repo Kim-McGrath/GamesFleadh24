@@ -194,12 +194,9 @@ libraries = {
 }
 
 [node name="AnimationTree" type="AnimationTree" parent="."]
-root_node = NodePath("../PortalInteract")
-libraries = {
-"": SubResource("AnimationLibrary_73u8f")
-}
 tree_root = SubResource("AnimationNodeStateMachine_dk5nj")
 anim_player = NodePath("../AnimationPlayer")
+active = true
 parameters/Arriving/blend_position = 0
 parameters/Idle/blend_position = 0
 

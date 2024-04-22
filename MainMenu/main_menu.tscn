@@ -1,0 +1,77 @@
+[gd_scene load_steps=5 format=3 uid="uid://bnlp0clhbjrq"]
+
+[ext_resource type="Texture2D" uid="uid://xt16kxk48eih" path="res://Art/menubg.png" id="1_cr6gh"]
+[ext_resource type="Script" path="res://Characters/scripts/main_menu.gd" id="1_eef5k"]
+[ext_resource type="FontFile" uid="uid://v6mc4g27x0vw" path="res://Art/Fonts/Minecraft.ttf" id="2_0tgdo"]
+[ext_resource type="FontFile" uid="uid://y4cojyvsm5wg" path="res://Art/Fonts/m5x7.ttf" id="3_bismi"]
+
+[node name="Main_Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_eef5k")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_cr6gh")
+
+[node name="GameTitle" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -65.0
+offset_top = 26.0
+offset_right = 65.0
+offset_bottom = 45.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_fonts/font = ExtResource("2_0tgdo")
+theme_override_font_sizes/font_size = 36
+text = "M E M O I R"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -81.0
+offset_top = -55.0
+offset_right = 81.0
+offset_bottom = 55.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Endless Mode" type="Button" parent="VBoxContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_bismi")
+text = "Endless Mode"
+
+[node name="Start" type="Button" parent="VBoxContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_bismi")
+text = "Start Game"
+
+[node name="Quit" type="Button" parent="VBoxContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_bismi")
+text = "Quit"
+
+[connection signal="pressed" from="VBoxContainer2/Endless Mode" to="." method="_on_endless_mode_pressed"]
+[connection signal="pressed" from="VBoxContainer2/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer2/Quit" to="." method="_on_quit_pressed"]
