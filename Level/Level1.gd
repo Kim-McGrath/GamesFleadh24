@@ -14,7 +14,8 @@ func get_closest_enemy():
 	var enemy = enemies[0]
 	
 	var distance: float = ManagerGame.global_player_ref.global_position.distance_to(enemies[0].global_position)
-	
+	#have to link this to the button in the main menu
+	#maybe add an array of levels or something like that
 	
 	for e in enemies:
 		var d = ManagerGame.global_player_ref.global_position.distance_to(e.global_position)
