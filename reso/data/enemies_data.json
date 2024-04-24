@@ -1,0 +1,18 @@
+{
+	"Demon": {
+		"hp": 5,
+		"move_speed": 60.0
+	},
+	"Slime": {
+		"hp": 9,
+		"move_speed": 30.0
+	},
+	"Pumpkin": {
+		"hp": 16,
+		"move_speed": 85.0
+	},
+	"Boss": {
+		"hp": 200,
+		"move_speed": 85.0
+	}
+}
