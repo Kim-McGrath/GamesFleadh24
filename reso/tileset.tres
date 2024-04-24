@@ -1,7 +1,8 @@
-[gd_resource type="TileSet" load_steps=5 format=3 uid="uid://blg5pmckuho0o"]
+[gd_resource type="TileSet" load_steps=7 format=3 uid="uid://blg5pmckuho0o"]
 
 [ext_resource type="Texture2D" uid="uid://08ib4b4t7vvr" path="res://Art/Tile-2.png" id="1_xx2av"]
 [ext_resource type="Texture2D" uid="uid://ddcf0t3pq6r7f" path="res://Art/Walls and grass by Eddi.png" id="2_ppn1n"]
+[ext_resource type="Texture2D" uid="uid://h3fo8ybu7f55" path="res://Art/grassy_stevie.png" id="3_y1860"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sgai7"]
 texture = ExtResource("1_xx2av")
@@ -429,7 +430,38 @@ texture = ExtResource("2_ppn1n")
 13:9/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 13:9/0/physics_layer_0/angular_velocity = 0.0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xgk6m"]
+texture = ExtResource("3_y1860")
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+3:0/0 = 0
+3:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:0/0/physics_layer_0/angular_velocity = 0.0
+5:0/0 = 0
+5:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:0/0/physics_layer_0/angular_velocity = 0.0
+7:0/0 = 0
+7:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:0/0/physics_layer_0/angular_velocity = 0.0
+3:2/0 = 0
+3:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:2/0/physics_layer_0/angular_velocity = 0.0
+5:2/0 = 0
+5:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:2/0/physics_layer_0/angular_velocity = 0.0
+3:4/0 = 0
+3:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:4/0/physics_layer_0/angular_velocity = 0.0
+5:4/0 = 0
+5:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:4/0/physics_layer_0/angular_velocity = 0.0
+7:4/0 = 0
+7:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:4/0/physics_layer_0/angular_velocity = 0.0
+
 [resource]
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_sgai7")
 sources/1 = SubResource("TileSetAtlasSource_6408w")
+sources/2 = SubResource("TileSetAtlasSource_xgk6m")
